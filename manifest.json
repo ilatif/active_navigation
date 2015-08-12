@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "active_navigation",
+	"version": "0.1.0",
+	"description": "Active Navigation allows easy navigation among open tabs.",
+	"browser_action": {
+		"default_title": "Active Navigation"
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"permissions": ["tabs", "contextMenus"]
+}
