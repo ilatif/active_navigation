@@ -10,5 +10,10 @@
 		"scripts": ["background.js"],
 		"persistent": false
 	},
+	"icons": {
+		"128": "images/compass-icon-128.png",
+		"48": "images/compass-icon-48.png",
+		"16": "images/compass-icon-16.png"
+	},
 	"permissions": ["tabs", "contextMenus"]
 }
