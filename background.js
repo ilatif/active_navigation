@@ -16,7 +16,6 @@ ActiveNavigation = {
 	create_sub_menus: function() {
 		chrome.tabs.query({}, function(tabs) {
 			var tabs_length = tabs.length;
-			console.log(tabs);
 			for (var i = 0; i < tabs_length; i++) {
 				var tab = tabs[i];
 				var context_menu_item = {
@@ -39,8 +38,6 @@ ActiveNavigation = {
 	},
 	attach_context_menu_item_clicked: function() {
 		chrome.contextMenus.onClicked.addListener(function(info, tab) {
-			console.log(info);
-			console.log(tab);
 			chrome.tabs.update(parseInt(info.menuItemId), {highlighted: true});
 		});
 	},
